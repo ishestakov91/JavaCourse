@@ -9,15 +9,18 @@ public class Main {
         System.out.println("Введите количество строк: ");
         int num = Integer.parseInt(scanner.nextLine());
 
-
         String[] lines = new String[num];
         int res[] = new int[num];
-        int res_max, count;
+        int res_max;
+        int count;
 
         for (int i = 0; i < num; i++) {
             System.out.println("Введите строку " + (i + 1) + ":");
             lines[i] = scanner.nextLine();
-            res[i] = (int) lines[i].chars().distinct().count();
+            res[i] = (int) lines[i]
+                    .chars()
+                    .distinct()
+                    .count();
         }
 
         res_max = res[0];

@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        double course, rub, usd;
+        double course;
+        double rub;
+        double usd;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите текущий курс доллара к рублю: ");
